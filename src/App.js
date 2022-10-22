@@ -3,22 +3,54 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='nav'>
+    <div className='navone'>
+       <FontAwesomeIcon icon={faFacebook} className="facebook-icon" />
+       <div>
+          <div className='search'>
+             <form className='form-box'>
+                <input className='input-box' type="text" placeholder="Facebook.." />
+                <button className='class-button'>
+                   <FontAwesomeIcon icon={faSearch} />
+                </button>
+             </form>
+          </div>
+       </div>
     </div>
+    <div className="navtwo">
+       <ul>
+          <li>
+             <FontAwesomeIcon icon={faHome} />
+          </li>
+          <li>
+             <FontAwesomeIcon icon={faTv} />
+          </li>
+          <li>
+             <FontAwesomeIcon icon={faBox} />
+          </li>
+          <li>
+             <FontAwesomeIcon icon={faTv} />
+          </li>
+          <li>
+             <FontAwesomeIcon icon={faBoxesPacking} />
+          </li>
+       </ul>
+    </div>
+    <div className='navthree'>
+       <ul>
+          <li>
+             <FontAwesomeIcon icon={faFacebookMessenger}/>
+          </li>
+          <li>
+             <FontAwesomeIcon icon={faBell}/>
+          </li>
+          <li>
+             <FontAwesomeIcon icon={faUser}/>
+          </li>
+          <li></li>
+       </ul>
+    </div>
+ </div>
   );
 }
 
